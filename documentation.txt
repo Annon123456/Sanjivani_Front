@@ -1,0 +1,36 @@
+Snjivani .org
+
+**important**:-> Before testing the application , import the database in your local server(workbench or wamp server)
+either insert a entry in users table for your name and credentials with your current phone number(for otp) and enter 
+md5 encrypted password in the table , or update priyojits contact with your number and test with his credentials .
+
+**credentials**
+1) phone-7524914220, password:->Priyojit@123
+2) phone-7524914220, password:->Harsh@123
+
+it will always reflect priyojit as we 
+
+
+localhost "http://127.0.0.1:5000/owner" :- login page(main)(open this on browser)
+md5.py:- encryption password
+sns_noti.py:- otp generator API
+norm.py:- useless
+app.py:-> [/owner]->main page(open this on browser)
+          [/login]-> for password authentication
+          [/auth]->otp verification
+
+
+TASKS:-
+
+task A: create [/logout] -> first update "user" table column "last_login" with "session['lastlogin']" and then destroy all session variable.
+taskB:  check the current build for any error or bugs.
+taskC:  update [/auth] to fetch privellage of a sepcific user from the user-privellage table, 
+        store the privellage retrieved as session['privellage'] ,
+        and pass that value in json format as {'privellage':session['privellage']}
+
+contents:->
+CSS-> /static/CSS
+JS->  /static/JS
+images-> /static/CSS/images
+
+
